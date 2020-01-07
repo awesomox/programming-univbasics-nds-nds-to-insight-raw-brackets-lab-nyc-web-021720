@@ -8,7 +8,7 @@ directors_box_office = {}
 def directors_totals(nds)
   row_index = 0 
   while row_index < directors_database.length do
-    nds[row_index] = directors_database[0][:name]
+    nds[:name] = directors_database[row_index][:name]
     row_index += 1 
     puts nds
 end
