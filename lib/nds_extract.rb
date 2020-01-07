@@ -7,7 +7,10 @@ p directors_database[0][:movies][0][:worldwide_gross]
 directors_box_office = {}
 def directors_totals(nds)
   row_index = 0 
-  
+  while row_index < directors_database.length do
+    nds[row_index] = directors_database[0][:name]
+    row_index += 1 
+    puts nds
 end
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
