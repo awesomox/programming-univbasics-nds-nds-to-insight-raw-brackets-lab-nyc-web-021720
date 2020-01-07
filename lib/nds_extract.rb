@@ -11,6 +11,7 @@ def directors_totals(nds)
     nds[:name] = directors_database[row_index][:name]
     row_index += 1 
     puts nds
+  end
 end
 
 directors_totals(directors_database)
